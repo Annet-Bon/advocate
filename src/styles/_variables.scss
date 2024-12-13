@@ -1,0 +1,30 @@
+// Основні кольори
+$primary-color: #000000;
+$secondary-color: #447F8D;
+$accent-color: #FFBD4E;
+$light-color: #ffffff;
+$background-color: #29343E;
+$background-nav: #25282F;
+$background-light: #f9f9f9;
+$text-color: #FFFFFF;
+$text-p-color: #c3c3c3;
+$border-color: #FFFFFF;
+
+// Типографіка
+$font-primary: 'KobzarKS', sans-serif;
+$font-size-base: 16px;
+$font-size-large: 2rem;
+$font-size-small: 0.875rem;
+
+// Розміри та відступи
+$padding-base: 20px;
+$margin-base: 20px;
+$border-radius: 8px;
+
+// Адаптивні брейкпоінти
+$breakpoints-map: (
+    sm: 470px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1025px
+);

@@ -1,0 +1,11 @@
+.testimonials__item {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

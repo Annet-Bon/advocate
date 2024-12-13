@@ -1,0 +1,269 @@
+@import './variables';
+@import './mixins';
+
+.navigation {
+  z-index: 100;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.45);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.45);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $background-nav;
+
+  height: 60px;
+  padding: 10px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  &__logo {
+    display: block;
+    height: 35px;
+    max-height: 35px;
+
+    & .logo {
+      height: 100%;
+    }
+  }
+
+  &__body.mobile {
+    // background-color: rgb(37 40 47);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+    // background-color: $background-color;
+    background-color: transparent;
+    transform: translate(0);
+    transition: transform 0.9 ease-in;
+
+    & .navigation__list {
+      background-color: #27303a;
+    }
+
+    & .navigation__contacts {
+      background-color: #27303a;
+      font-size: 1.125em;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid $accent-color;
+
+      color: $text-color;
+
+      & .contacts {
+
+        & .phone_icon,
+        .mail_icon {
+          margin: 0 10px 0 0;
+          top: 3px;
+          position: relative;
+        }
+
+        & a {
+          transition: color .25s ease-out;
+          text-transform: none;
+
+          &:hover,
+          &:focus {
+            color: $accent-color;
+          }
+        }
+      }
+
+      & .hours {
+        margin: 30px 0;
+      }
+
+      & .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .social__list {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 15px;
+
+          & li {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid $accent-color;
+    font-size: 20px;
+
+    & li {
+      margin: 15px 0;
+    }
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  & .backdrop {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.507);
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  & button {
+    all: unset;
+    /* Видаляє всі стилі за замовчуванням */
+    display: inline-flex;
+    /* Дозволяє розміщувати іконку чи текст */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & i {
+      color: $accent-color;
+      font-size: 35px;
+    }
+  }
+
+  @include respond-to(lg) {
+
+    padding: 10px 0 10px 0;
+    height: 80px;
+
+    &__container {
+      margin: 0 30px;
+      padding: 0;
+      width: 100%;
+      max-width: 1210px;
+    }
+
+    &__body {
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+      & .navigation__contacts {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    &__logo {
+      display: block;
+      height: 45px;
+      max-height: 45px;
+
+      & .logo {
+        height: 100%;
+      }
+    }
+
+    & .icon-button {
+      display: none;
+    }
+
+    &__list {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      border-bottom: none;
+
+      & li {
+        margin: 0;
+        padding: 15px 0 15px 40px;
+
+        & a {
+          font-size: 1em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @include respond-to(xl) {
+    padding: 10px 0 10px 0;
+    height: 70px;
+
+    &__container {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 45px;
+      width: 100%;
+      max-width: 1210px;
+    }
+
+    &__body {
+      & .navigation__contacts {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    &__logo {
+      height: 60px;
+      max-height: 60px;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      border: none;
+
+      & li {
+        margin: 0;
+        padding: 15px 0 15px 40px;
+
+        & a {
+          font-size: 1em;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

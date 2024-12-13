@@ -1,0 +1,47 @@
+@import './variables';
+@import './mixins';
+
+/* Стилі для прелоадера */
+.preloader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $background-color;
+    /* Темний фон */
+    z-index: 9999;
+    /* Прелоадер поверх іншого контенту */
+    height: 100vh;
+    /* Повна висота екрана */
+    width: 100vw;
+    /* Повна ширина екрана */
+}
+
+/* Позиціонування SVG в центрі прелоадера */
+.preloader-wrapper svg {
+    max-width: 100px;
+    /* Розмір логотипу */
+    height: auto;
+    /* Автоматична висота */
+    animation: fadeIn 1s ease-in-out 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@include respond-to(xl) {
+    .preloader-wrapper svg {
+        max-width: 200px;
+    }
+}

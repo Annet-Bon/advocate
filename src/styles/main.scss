@@ -1,0 +1,126 @@
+@import "./variables";
+@import "./mixins";
+@import "./Navigation";
+@import "./Header";
+@import "./About";
+@import "./Services";
+@import "./Testimonials";
+@import "./Contact";
+@import "./Footer";
+@import "./AppLogo";
+
+@font-face {
+  font-family: 'KobzarKS';
+  src: url('../../public/fonts/KobzarKS.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fontello/font/icons.woff2') format('woff2'),
+    url('../fontello/font/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  background-color: $background-color;
+
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "KobzarKS", sans-serif;
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3 {
+  color: $text-color;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Стилі для основного контейнера */
+.app {
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* Дозволяє розтягнути контейнер на весь доступний простір */
+  min-height: 100vh;
+  /* Контейнер завжди має займати 100% висоти */
+}
+
+/* Основний контент прихований до завершення завантаження */
+.main-content {
+  flex: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+/* Показати основний контент після завершення завантаження */
+.main-content.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Стилі для планшетів (від 768px до 1024px) */
+@include respond-to(lg) {
+  p {
+    font-size: 1.5em;
+  }
+}
+
+/* Стилі для ПК (від 1024px) */
+@include respond-to(xl) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 30px 0 0 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1210px;
+  }
+}

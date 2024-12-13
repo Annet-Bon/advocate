@@ -1,0 +1,30 @@
+@import './variables';
+
+
+.testimonials {
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    color: $primary-color;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    word-spacing: 10px;
+    margin-bottom: 50px;
+
+    & span {
+      color: $accent-color;
+    }
+  }
+
+  &__item {
+
+    cite {
+      display: block;
+      margin-top: 10px;
+      color: $secondary-color;
+    }
+  }
+}

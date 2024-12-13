@@ -1,0 +1,122 @@
+@import './variables';
+@import './mixins';
+
+.slogan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 0;
+
+    & .icon-quote {
+        color: $secondary-color;
+        position: absolute;
+        font-size: 35px;
+        z-index: 10;
+    }
+
+    & .icon-quote.top {
+        top: 7%;
+        left: 7%;
+        /* Початкове розташування верхньої іконки */
+        transform: translateX(-50%);
+
+        @include respond-to(lg) {
+            top: 10%;
+            left: 15%;
+        }
+
+        @include respond-to(xl) {
+            top: 15%;
+            left: 33%;
+        }
+    }
+
+    & .icon-quote.bottom {
+
+        bottom: 7%;
+        right: 7%;
+        /* Початкове розташування нижньої іконки */
+        transform: translateX(50%) rotate(180deg);
+
+        @include respond-to(lg) {
+            bottom: 10%;
+            right: 15%;
+        }
+
+        @include respond-to(xl) {
+            bottom: 15%;
+            right: 33%;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: $text-p-color;
+
+        @include respond-to(lg) {
+            font-size: 1.5em;
+        }
+    }
+
+    &__signature {
+        margin: -20px 0 0 150px;
+        position: relative;
+        width: 220px;
+
+        @include respond-to(md) {
+            margin: -25px 0 0 250px;
+        }
+
+        @include respond-to(lg) {
+            margin: -15px 0 0 250px;
+        }
+
+        @include respond-to(xl) {
+            margin: -10px 0 0 200px;
+        }
+    }
+
+    /* Загальні стилі для ліній */
+    & .line {
+        position: absolute;
+        background-color: $accent-color;
+        height: 2px;
+        transition: width 3s cubic-bezier(0.22, 0.61, 0.36, 1);
+        width: 0;
+
+        /* Верхня лінія */
+        &.top-line {
+            top: 0;
+            left: 0;
+        }
+
+        /* Нижня лінія */
+        &.bottom-line {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &.animate-lines {
+        .top-line {
+            width: 100vw;
+            /* Верхня лінія тягнеться праворуч на всю ширину */
+        }
+
+        .bottom-line {
+            width: 100vw;
+            /* Нижня лінія тягнеться ліворуч на всю ширину */
+            left: auto;
+            /* Уникаємо конфлікту з початковою позицією */
+        }
+
+        & .top-line,
+        .bottom-line {
+            @include respond-to(xl) {
+                width: 100%;
+            }
+        }
+    }
+}

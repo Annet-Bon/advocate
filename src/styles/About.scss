@@ -1,0 +1,229 @@
+@import './variables';
+@import './mixins';
+
+.about__background {
+  // background-image: url('../images/black-chess-pieces-displayed-marble.jpg'); // Додайте ваш шлях до зображення
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: cover;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1300px;
+
+  & .background_gradient {
+    // background: linear-gradient(0deg, #29343E 0%, rgba(41, 52, 62, 0) 100%);
+    background: rgb(41, 52, 62);
+    background: linear-gradient(0deg, rgba(41, 52, 62, 1) 15%, rgba(41, 52, 62, 0.44870448179271705) 50%, rgba(41, 52, 62, 1) 85%);
+  }
+}
+
+.about {
+
+  padding: 30px;
+  text-align: center;
+
+  &__title {
+    color: $accent-color;
+  }
+
+  &__text {
+    text-align: left;
+    color: $text-color;
+  }
+
+  @include respond-to(xl) {
+    padding: 50px 40px;
+  }
+
+  @include respond-to(xl) {
+    // padding: 50px 45px;
+
+    &__text {
+      display: flex;
+      text-align: left;
+      color: #FFFFFF;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+}
+
+.text__experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 30px 0;
+  padding: 30px 25px 25px 25px;
+
+  background: rgba(41, 52, 62, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid $secondary-color;
+  transition: border-color 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transform: scale(1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #FFBD4E;
+    transform: scale(1);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover .image_briefcase,
+  &:focus .image_briefcase {
+    transform: translateY(0px);
+    transform: scale(1.05);
+  }
+
+  & .image_briefcase {
+    transform: translateY(-10px);
+    transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  & p span {
+    font-family: $font-primary;
+    color: $accent-color;
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    line-height: .8em;
+    font-size: 6em;
+    font-weight: 300;
+    text-align: center;
+    margin: 11px 10px 0 0;
+  }
+
+  @include respond-to(lg) {
+    transform: scale(1);
+  }
+
+  @include respond-to(xl) {
+    margin: 0 15px;
+    width: 30%;
+    transform: scale(0.95);
+  }
+}
+
+.text__goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 30px 0;
+  padding: 30px 25px 25px 25px;
+
+  background: rgba(41, 52, 62, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid $secondary-color;
+  transition: border-color 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transform: scale(1);
+
+
+  &:hover,
+  &:focus {
+    border: 1px solid #FFBD4E;
+    transform: scale(1);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover .image_goal,
+  &:focus .image_goal {
+    transform: translateY(0px);
+    transform: scale(1.05);
+  }
+
+  & .image_goal {
+    transform: translateY(-10px);
+    transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  & p span {
+    font-family: $font-primary;
+    color: $accent-color;
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    line-height: .8em;
+    font-size: 6em;
+    font-weight: 300;
+    text-align: center;
+    margin: 11px 10px 0 0;
+  }
+
+  @include respond-to(lg) {
+    transform: scale(1);
+  }
+
+  @include respond-to(xl) {
+    margin: 0 15px;
+    width: 30%;
+    transform: scale(0.95);
+  }
+}
+
+.text__cooperation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  padding: 30px 25px 25px 25px;
+
+  background: rgba(41, 52, 62, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid $secondary-color;
+  transition: border-color 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transform: scale(1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #FFBD4E;
+    transform: scale(1);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover .image_cooperation,
+  &:focus .image_cooperation {
+    transform: translateY(0px);
+    transform: scale(1.05);
+  }
+
+  & .image_cooperation {
+    transform: translateY(-10px);
+    transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  & p span {
+    font-family: $font-primary;
+    color: $accent-color;
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    line-height: .8em;
+    font-size: 7em;
+    font-weight: 300;
+    text-align: center;
+    margin: 11px 10px 0 0;
+  }
+
+  @include respond-to(lg) {
+    transform: scale(1);
+  }
+
+  @include respond-to(xl) {
+    margin: 0 15px;
+    width: 30%;
+    transform: scale(0.95);
+  }
+}

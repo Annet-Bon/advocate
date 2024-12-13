@@ -1,0 +1,155 @@
+@import './variables';
+@import './mixins';
+
+.footer {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: $background-nav;
+  text-align: center;
+  color: $light-color;
+
+  &__container {
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to(lg, xl) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include respond-to(xl) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+  &__logo {
+    margin: 30px 0;
+
+    & img {
+      height: 100px;
+
+      @include respond-to(xl) {
+        height: 70px;
+      }
+    }
+
+    @include respond-to(lg) {
+      width: 25%;
+      margin: 30px 15px 30px 0;
+    }
+
+    @include respond-to(xl) {
+      text-align: left;
+      margin: 30px 10px;
+      width: 15%;
+    }
+  }
+
+  &__info {
+    margin: 25px 0 0 0;
+
+    @include respond-to(xl) {
+      width: 85%;
+      margin: 0;
+    }
+
+    & .info__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include respond-to(xl) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      & .contacts {
+        text-align: left;
+      }
+
+      & .phone_icon,
+      .mail_icon {
+        margin: 0 10px 0 0;
+        top: 3px;
+        position: relative;
+      }
+
+      & a {
+        color: $text-p-color;
+        transition: color .25s ease-out;
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+      }
+
+      & .hours {
+        margin: 25px 0 0 0;
+
+        @include respond-to(xl) {
+          margin: 0;
+        }
+      }
+    }
+
+    & .socials {
+      margin: 25px 0;
+      display: flex;
+      flex-direction: column;
+
+      @include respond-to(xl) {
+        margin: 0;
+      }
+
+      & .social__list {
+        display: flex;
+
+        & li {
+          margin: 10px 10px;
+
+          & svg {
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 2px solid $accent-color;
+  }
+
+  &__text {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+
+    & a {
+      font-family: 'KobzarKS';
+      color: $secondary-color;
+      font-size: 25px;
+      transition: color .25s ease-out;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}

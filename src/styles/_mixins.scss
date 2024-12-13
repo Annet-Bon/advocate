@@ -1,0 +1,47 @@
+// Міксін для адаптивності
+@mixin respond-to($breakpoints...) {
+  @each $breakpoint in $breakpoints {
+    $min-width: map-get($breakpoints-map, $breakpoint);
+
+    @if $breakpoint ==sm {
+      @media (max-width: 470px) {
+        @content;
+      }
+    }
+
+    @else if $breakpoint ==md {
+      @media (min-width: 470px) and (max-width: 768px) {
+        @content;
+      }
+    }
+
+    @else if $breakpoint ==lg {
+      @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+      }
+    }
+
+    @else if $breakpoint ==xl {
+      @media (min-width: 1025px) {
+        @content;
+      }
+    }
+  }
+}
+
+// Міксін для центрування елементів
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Міксін для текстових тіней
+@mixin text-shadow($color: rgba(0, 0, 0, 0.15), $blur: 2px, $offset-x: 1px, $offset-y: 1px) {
+  text-shadow: $offset-x $offset-y $blur $color;
+}
+
+// Міксін для базового переходу
+@mixin transition($property: all, $duration: 0.3s, $timing: ease-in-out) {
+  transition: $property $duration $timing;
+}
