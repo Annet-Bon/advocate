@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "//annet-bon.github.io/advocate/static/css/main.d1e01506.css",
-    "main.js": "//annet-bon.github.io/advocate/static/js/main.f015f4f3.js",
-    "static/media/still-life-documents.jpg": "//annet-bon.github.io/advocate/static/media/still-life-documents.2cae2b47a90bf04bbd2c.jpg",
-    "static/media/woman-signing-contract-female-hand-putting-written-signature-document.jpg": "//annet-bon.github.io/advocate/static/media/woman-signing-contract-female-hand-putting-written-signature-document.30f31ff48e1851fe3b20.jpg",
-    "static/media/portrait-1.png": "//annet-bon.github.io/advocate/static/media/portrait-1.416309e78a61b7c930df.png",
-    "static/media/successful-entrepreneurs-analyzing-perspectives.jpg": "//annet-bon.github.io/advocate/static/media/successful-entrepreneurs-analyzing-perspectives.91ba4af995cc892dd9f0.jpg",
+    "main.css": "//annet-bon.github.io/advocate/static/css/main.13328616.css",
+    "main.js": "//annet-bon.github.io/advocate/static/js/main.3eb437e7.js",
     "static/media/testimonial.jpg": "//annet-bon.github.io/advocate/static/media/testimonial.690f582a6fc05d9f3af6.jpg",
-    "static/media/young-adult-organizing-documents.jpg": "//annet-bon.github.io/advocate/static/media/young-adult-organizing-documents.12870af8dba2c30d9059.jpg",
     "static/media/KobzarKS.ttf": "//annet-bon.github.io/advocate/static/media/KobzarKS.b954685eafcd8b947a3a.ttf",
+    "static/media/company-services-dark.jpg": "//annet-bon.github.io/advocate/static/media/company-services-dark.a05cfa113b301187f118.jpg",
+    "static/media/portrait.webp": "//annet-bon.github.io/advocate/static/media/portrait.8833e2f80ad84f538f7b.webp",
+    "static/media/foreign-services-dark.jpg": "//annet-bon.github.io/advocate/static/media/foreign-services-dark.a7e0a05b1f4bea8abf28.jpg",
+    "static/media/civil-services-dark.jpg": "//annet-bon.github.io/advocate/static/media/civil-services-dark.22151d19b4e5c5678387.jpg",
     "static/media/icons.svg?99231179": "//annet-bon.github.io/advocate/static/media/icons.5c85ab77be71c2cc771f.svg",
     "static/media/icons.eot?99231179": "//annet-bon.github.io/advocate/static/media/icons.e557c4d68fc71ca312bd.eot",
     "static/media/icons.ttf?99231179": "//annet-bon.github.io/advocate/static/media/icons.bde7e0d61d2c0eca8f84.ttf",
@@ -16,14 +15,14 @@
     "static/media/icons.woff?99231179": "//annet-bon.github.io/advocate/static/media/icons.a42513dd30647e224989.woff",
     "static/media/icons.woff2?99231179": "//annet-bon.github.io/advocate/static/media/icons.f0bd79018aabb83496bd.woff2",
     "index.html": "//annet-bon.github.io/advocate/index.html",
-    "static/media/logo.svg": "//annet-bon.github.io/advocate/static/media/logo.b4c7a2dcd38a7546d596f28d42a14310.svg",
-    "static/media/animate-logo.svg": "//annet-bon.github.io/advocate/static/media/animate-logo.82f60349dd38e82c5a8aae9f28f471e9.svg",
+    "static/media/logo.svg": "//annet-bon.github.io/advocate/static/media/logo.111facc9323e29941bf4e0c25b404138.svg",
+    "static/media/animate-logo.svg": "//annet-bon.github.io/advocate/static/media/animate-logo.43a0988a92fd1f99bcbecebc80858eee.svg",
     "static/media/icon-arrow.svg": "//annet-bon.github.io/advocate/static/media/icon-arrow.dd6a4b182f563c3ec321d80a8e79b67b.svg",
-    "main.d1e01506.css.map": "//annet-bon.github.io/advocate/static/css/main.d1e01506.css.map",
-    "main.f015f4f3.js.map": "//annet-bon.github.io/advocate/static/js/main.f015f4f3.js.map"
+    "main.13328616.css.map": "//annet-bon.github.io/advocate/static/css/main.13328616.css.map",
+    "main.3eb437e7.js.map": "//annet-bon.github.io/advocate/static/js/main.3eb437e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1e01506.css",
-    "static/js/main.f015f4f3.js"
+    "static/css/main.13328616.css",
+    "static/js/main.3eb437e7.js"
   ]
 }
