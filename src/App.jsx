@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import "normalize.css";
+
 import "./styles/main.scss";
 import "./fontello/css/icons.css";
+
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 // import Slogan from "./components/Slogan";

@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Services.scss";
 import "../fontello/css/icons.css";
-import Person from "../images/still-life-documents.jpg";
-import Company from "../images/successful-entrepreneurs-analyzing-perspectives.jpg";
-import Criminal from "../images/young-adult-organizing-documents.jpg";
-import Help from "../images/woman-signing-contract-female-hand-putting-written-signature-document.jpg";
+import Person from "../images/civil-services-dark.jpg";
+import Company from "../images/company-services-dark.jpg";
+import Criminal from "../images/company-services-dark.jpg";
+import Help from "../images/foreign-services-dark.jpg";
 
 const Services = () => (
   <section id="services" className="services container">

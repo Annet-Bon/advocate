@@ -61,7 +61,7 @@ const Footer = () => (
                 </li>
                 <li>
                   <a
-                    href="https://t.me/username"
+                    href="https://t.me/yevtushenkolawyer"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

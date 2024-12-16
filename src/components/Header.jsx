@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Header.scss";
 // import Signature from "../images/signature.png";
-import Portrait from "../images/portrait-1.png";
+import Portrait from "../images/portrait.webp";
 
 const Header = () => (
   <section className="header__background">

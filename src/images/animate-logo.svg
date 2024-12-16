@@ -11,7 +11,7 @@
   <!-- Перший шар -->
   <path
     d="M 377.5 0 L 377.5 229.5 L 337.5 229.5 L 337.5 96.5 L 263.5 169.5 L 136.5 41 L 3.5 39.5 L 37.5 3 L 152.5 3 L 263.5 114.5 L 376.5 0 Z"
-    stroke="#FFBD4E"
+    stroke="#edc339"
     stroke-width="2"
     stroke-dasharray="1410"
     stroke-dashoffset="1410"
@@ -28,7 +28,7 @@
   <!-- Другий шар -->
   <path
     d="M 1.5 135.5 L 39 97 L 145 97 L 180 134.5 L 1.5 135.5 Z"
-    stroke="#FFBD4E"
+    stroke="#edc339"
     stroke-width="2"
     stroke-dasharray="600"
     stroke-dashoffset="600"
@@ -45,7 +45,7 @@
   <!-- Третій шар -->
   <path
     d="M 260.5 229.5 L 36.5 229.5 L 1.5 190.5 L 108 189.5 L 222.5 191 L 260.5 229.5 Z"
-    stroke="#FFBD4E"
+    stroke="#edc339"
     stroke-width="2"
     stroke-dasharray="800"
     stroke-dashoffset="800"
