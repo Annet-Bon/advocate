@@ -111,6 +111,11 @@
 
           & li {
             margin: 0 10px;
+
+            & a svg {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
       }
@@ -121,7 +126,7 @@
     text-align: center;
     padding: 40px;
     border-bottom: 1px solid $accent-color;
-    font-size: 30px;
+    font-size: 20px;
 
     & li {
       margin: 15px 0;
