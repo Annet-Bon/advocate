@@ -1,9 +1,16 @@
 {
   "files": {
     "main.css": "/advocate/static/css/main.55c786c5.css",
-    "main.js": "/advocate/static/js/main.81a00c0b.js",
+    "main.js": "/advocate/static/js/main.18266c23.js",
+    "static/media/feedback1.jpg": "/advocate/static/media/feedback1.68a9ab7fc9748daa0b10.jpg",
+    "static/media/feedback4.jpg": "/advocate/static/media/feedback4.1c66d3f33f8679450ad3.jpg",
+    "static/media/feedback6.jpg": "/advocate/static/media/feedback6.3baeaf61c95413f659b9.jpg",
     "static/media/KobzarKS.ttf": "/advocate/static/media/KobzarKS.b954685eafcd8b947a3a.ttf",
+    "static/media/feedback3.jpg": "/advocate/static/media/feedback3.2c6bddc0724fbe9789ba.jpg",
+    "static/media/feedback7.jpg": "/advocate/static/media/feedback7.8ff91b88d63246c5fdee.jpg",
+    "static/media/feedback5.jpg": "/advocate/static/media/feedback5.7eced61a04d02b848201.jpg",
     "static/media/criminal-services-dark.jpg": "/advocate/static/media/criminal-services-dark.1e25a30b4abfb450ba1e.jpg",
+    "static/media/feedback2.jpg": "/advocate/static/media/feedback2.abe5c104adf09e7998e6.jpg",
     "static/media/company-services-dark.jpg": "/advocate/static/media/company-services-dark.a05cfa113b301187f118.jpg",
     "static/media/portrait.webp": "/advocate/static/media/portrait.8833e2f80ad84f538f7b.webp",
     "static/media/foreign-services-dark.jpg": "/advocate/static/media/foreign-services-dark.a7e0a05b1f4bea8abf28.jpg",
@@ -19,10 +26,10 @@
     "static/media/logo.svg": "/advocate/static/media/logo.ac5da8f862e61ccd3a3be5526cd37481.svg",
     "static/media/icon-arrow.svg": "/advocate/static/media/icon-arrow.dd6a4b182f563c3ec321d80a8e79b67b.svg",
     "main.55c786c5.css.map": "/advocate/static/css/main.55c786c5.css.map",
-    "main.81a00c0b.js.map": "/advocate/static/js/main.81a00c0b.js.map"
+    "main.18266c23.js.map": "/advocate/static/js/main.18266c23.js.map"
   },
   "entrypoints": [
     "static/css/main.55c786c5.css",
-    "static/js/main.81a00c0b.js"
+    "static/js/main.18266c23.js"
   ]
 }
