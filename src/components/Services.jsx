@@ -3,7 +3,7 @@ import "../styles/Services.scss";
 import "../fontello/css/icons.css";
 import Person from "../images/civil-services-dark.jpg";
 import Company from "../images/company-services-dark.jpg";
-import Criminal from "../images/company-services-dark.jpg";
+import Criminal from "../images/criminal-services-dark.jpg";
 import Help from "../images/foreign-services-dark.jpg";
 
 const Services = () => (

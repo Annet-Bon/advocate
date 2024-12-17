@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Testimonials.scss";
 import { CarouselProvider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-
+import Testimonial from "./Testimonial";
 import TestimonialCarousel from "./CarouselSlider";
 
 const Testimonials = () => {
@@ -17,17 +17,19 @@ const Testimonials = () => {
       <div className="testimonials__list">
         <CarouselProvider
           visibleSlides={slideCount}
-          totalSlides={6}
+          totalSlides={7}
           step={1}
           currentSlide={currentSlide}
           naturalSlideWidth={100}
           naturalSlideHeight={125}
           isIntrinsicHeight={true}
+          infinite={true}
         >
           <TestimonialCarousel
             setSlideCount={setSlideCount}
             setCurrentSlide={setCurrentSlide}
           />
+          <Testimonial currentSlide={currentSlide} />
         </CarouselProvider>
       </div>
     </section>
