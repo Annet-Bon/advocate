@@ -12,12 +12,13 @@ const testimonials = [
 ];
 
 const Testimonial = ({ currentSlide }) => {
+  // Import the image dynamically based on the current slide index
+  const imagePath = testimonials[currentSlide];
+  const imageUrl = require(`../images/${imagePath}`);
+
   return (
     <blockquote className="testimonials__item">
-      <img
-        alt={`Скріншот відгука ${currentSlide + 1}`}
-        src={require(`../images/${testimonials[currentSlide]}`)}
-      />
+      <img alt={`Скріншот відгука ${currentSlide + 1}`} src={imageUrl} />
     </blockquote>
   );
 };
