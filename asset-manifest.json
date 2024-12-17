@@ -1,17 +1,9 @@
 {
   "files": {
     "main.css": "/advocate/static/css/main.55c786c5.css",
-    "main.js": "/advocate/static/js/main.343deedd.js",
-    "static/media/testimonial.jpg": "/advocate/static/media/testimonial.690f582a6fc05d9f3af6.jpg",
-    "static/media/feedback1.jpg": "/advocate/static/media/feedback1.68a9ab7fc9748daa0b10.jpg",
-    "static/media/feedback4.jpg": "/advocate/static/media/feedback4.1c66d3f33f8679450ad3.jpg",
-    "static/media/feedback6.jpg": "/advocate/static/media/feedback6.3baeaf61c95413f659b9.jpg",
+    "main.js": "/advocate/static/js/main.81a00c0b.js",
     "static/media/KobzarKS.ttf": "/advocate/static/media/KobzarKS.b954685eafcd8b947a3a.ttf",
-    "static/media/feedback3.jpg": "/advocate/static/media/feedback3.2c6bddc0724fbe9789ba.jpg",
-    "static/media/feedback7.jpg": "/advocate/static/media/feedback7.8ff91b88d63246c5fdee.jpg",
-    "static/media/feedback5.jpg": "/advocate/static/media/feedback5.7eced61a04d02b848201.jpg",
     "static/media/criminal-services-dark.jpg": "/advocate/static/media/criminal-services-dark.1e25a30b4abfb450ba1e.jpg",
-    "static/media/feedback2.jpg": "/advocate/static/media/feedback2.abe5c104adf09e7998e6.jpg",
     "static/media/company-services-dark.jpg": "/advocate/static/media/company-services-dark.a05cfa113b301187f118.jpg",
     "static/media/portrait.webp": "/advocate/static/media/portrait.8833e2f80ad84f538f7b.webp",
     "static/media/foreign-services-dark.jpg": "/advocate/static/media/foreign-services-dark.a7e0a05b1f4bea8abf28.jpg",
@@ -22,16 +14,15 @@
     "static/media/icons.woff?99231179": "/advocate/static/media/icons.a42513dd30647e224989.woff",
     "static/media/signature.png": "/advocate/static/media/signature.b278e0a67584d8c81497.png",
     "static/media/icons.woff2?99231179": "/advocate/static/media/icons.f0bd79018aabb83496bd.woff2",
-    "static/media/favicon-16x16.png": "/advocate/static/media/favicon-16x16.9644418cdf7f50c1a445.png",
     "index.html": "/advocate/index.html",
     "static/media/animate-logo.svg": "/advocate/static/media/animate-logo.61a418c23906cd56a97ae4024f00b7c7.svg",
     "static/media/logo.svg": "/advocate/static/media/logo.ac5da8f862e61ccd3a3be5526cd37481.svg",
     "static/media/icon-arrow.svg": "/advocate/static/media/icon-arrow.dd6a4b182f563c3ec321d80a8e79b67b.svg",
     "main.55c786c5.css.map": "/advocate/static/css/main.55c786c5.css.map",
-    "main.343deedd.js.map": "/advocate/static/js/main.343deedd.js.map"
+    "main.81a00c0b.js.map": "/advocate/static/js/main.81a00c0b.js.map"
   },
   "entrypoints": [
     "static/css/main.55c786c5.css",
-    "static/js/main.343deedd.js"
+    "static/js/main.81a00c0b.js"
   ]
 }
