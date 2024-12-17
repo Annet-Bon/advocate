@@ -1,0 +1,36 @@
+<svg id="e3aYsVOcm6K1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1496 920" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+
+  <!-- Перший шлях -->
+  <path d="M10.847784,6.078663h494.38L952.051815,426.265054L1358.227784,9.078663v911h-163v-477L952.051815,683.416841L405.227784,163.078663h-534l139.62-157Z"
+        transform="translate(134.772216-3.078663)"
+        fill="none" 
+        stroke="#f7c63e" 
+        stroke-width="5"
+        stroke-dasharray="5760"
+        stroke-dashoffset="5760">
+    <animate attributeName="stroke-dashoffset" from="5760" to="0" dur="2s" fill="freeze"/>
+  </path>
+
+  <!-- Другий шлях -->
+  <path d="M0.935919,0.263272h894l160,159h-914.38l-139.62-159Z"
+        transform="translate(5.064081 757.736728)"
+        fill="none" 
+        stroke="#f7c63e" 
+        stroke-width="5"
+        stroke-dasharray="4400"
+        stroke-dashoffset="4400">
+    <animate attributeName="stroke-dashoffset" from="4400" to="0" dur="3s" fill="freeze"/>
+  </path>
+
+  <!-- Третій шлях -->
+  <path d="M0.274325,-1.544612h371.816327l163.265306,156h-677.551021l142.469388-156Z"
+        transform="matrix(.98 0 0 1 145.351161 384)"
+        fill="none" 
+        stroke="#f7c63e" 
+        stroke-width="5"
+        stroke-dasharray="3200"
+        stroke-dashoffset="3200">
+    <animate attributeName="stroke-dashoffset" from="3200" to="0" dur="3s" fill="freeze"/>
+  </path>
+
+</svg>
