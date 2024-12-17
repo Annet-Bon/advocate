@@ -1,5 +1,12 @@
 import React from "react";
 import "../styles/Testimonial.scss";
+import "../images/feedback1.jpg";
+import "../images/feedback2.jpg";
+import "../images/feedback3.jpg";
+import "../images/feedback4.jpg";
+import "../images/feedback5.jpg";
+import "../images/feedback6.jpg";
+import "../images/feedback7.jpg";
 
 const testimonials = [
   "feedback1.jpg",
