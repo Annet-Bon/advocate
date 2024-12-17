@@ -14,7 +14,7 @@ const Testimonial = ({ currentSlide }) => {
 
   return (
     <blockquote className="testimonials__item">
-      <img alt={`Скріншот відгука ${currentSlide + 1}`} src={imageUrl} />
+      <img alt="Скріншот відгука" src={imageUrl} />
     </blockquote>
   );
 };
