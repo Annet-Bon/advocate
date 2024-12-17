@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "//annet-bon.github.io/advocate/static/css/main.16a9555b.css",
-    "main.js": "//annet-bon.github.io/advocate/static/js/main.16d70b79.js",
+    "main.js": "//annet-bon.github.io/advocate/static/js/main.40a120df.js",
     "static/media/testimonial.jpg": "//annet-bon.github.io/advocate/static/media/testimonial.690f582a6fc05d9f3af6.jpg",
     "static/media/feedback1.jpg": "//annet-bon.github.io/advocate/static/media/feedback1.68a9ab7fc9748daa0b10.jpg",
     "static/media/feedback4.jpg": "//annet-bon.github.io/advocate/static/media/feedback4.1c66d3f33f8679450ad3.jpg",
@@ -28,10 +28,10 @@
     "static/media/logo.svg": "//annet-bon.github.io/advocate/static/media/logo.ac5da8f862e61ccd3a3be5526cd37481.svg",
     "static/media/icon-arrow.svg": "//annet-bon.github.io/advocate/static/media/icon-arrow.dd6a4b182f563c3ec321d80a8e79b67b.svg",
     "main.16a9555b.css.map": "//annet-bon.github.io/advocate/static/css/main.16a9555b.css.map",
-    "main.16d70b79.js.map": "//annet-bon.github.io/advocate/static/js/main.16d70b79.js.map"
+    "main.40a120df.js.map": "//annet-bon.github.io/advocate/static/js/main.40a120df.js.map"
   },
   "entrypoints": [
     "static/css/main.16a9555b.css",
-    "static/js/main.16d70b79.js"
+    "static/js/main.40a120df.js"
   ]
 }
