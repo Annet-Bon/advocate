@@ -37,7 +37,9 @@ const Footer = () => (
               </ul>
             </li>
 
-            <li className="hours">Графік роботи: Пн-Пт 9:00–18:00</li>
+            <li className="hours">
+              Графік роботи: <span>Пн-Пт</span> 9:00–18:00
+            </li>
             <li className="socials">
               Соцмережі:
               <ul className="social__list">

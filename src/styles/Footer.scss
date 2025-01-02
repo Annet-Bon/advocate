@@ -103,6 +103,10 @@
       & .hours {
         margin: 25px 0 0 0;
 
+        & span {
+          color: $text-p-color;
+        }
+
         @include respond-to(xl) {
           margin: 0;
         }
