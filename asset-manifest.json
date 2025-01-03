@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/advocate/static/css/main.4a232d44.css",
-    "main.js": "/advocate/static/js/main.ee410adf.js",
+    "main.css": "/advocate/static/css/main.ccbecccd.css",
+    "main.js": "/advocate/static/js/main.fee1babb.js",
     "static/media/feedback1.jpg": "/advocate/static/media/feedback1.68a9ab7fc9748daa0b10.jpg",
     "static/media/feedback4.jpg": "/advocate/static/media/feedback4.1c66d3f33f8679450ad3.jpg",
     "static/media/feedback6.jpg": "/advocate/static/media/feedback6.3baeaf61c95413f659b9.jpg",
@@ -25,11 +25,11 @@
     "static/media/animate-logo.svg": "/advocate/static/media/animate-logo.61a418c23906cd56a97ae4024f00b7c7.svg",
     "static/media/logo.svg": "/advocate/static/media/logo.ac5da8f862e61ccd3a3be5526cd37481.svg",
     "static/media/arrow.svg": "/advocate/static/media/arrow.a85a29844583ca9e051376a1116e7f1d.svg",
-    "main.4a232d44.css.map": "/advocate/static/css/main.4a232d44.css.map",
-    "main.ee410adf.js.map": "/advocate/static/js/main.ee410adf.js.map"
+    "main.ccbecccd.css.map": "/advocate/static/css/main.ccbecccd.css.map",
+    "main.fee1babb.js.map": "/advocate/static/js/main.fee1babb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a232d44.css",
-    "static/js/main.ee410adf.js"
+    "static/css/main.ccbecccd.css",
+    "static/js/main.fee1babb.js"
   ]
 }
