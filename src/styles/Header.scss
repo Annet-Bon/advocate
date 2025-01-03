@@ -36,6 +36,11 @@
     flex-direction: column;
     z-index: 5;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 1800px) {
+      padding: 0 0 100px 0;
+      justify-content: flex-end;
+    }
   }
 
   &__title {
@@ -225,6 +230,7 @@
 
     &__image {
       // padding: 30px 0 0 30px;
+      overflow: visible;
       width: 50%;
       height: 100vh;
       position: relative;
@@ -237,6 +243,13 @@
       height: 100%;
       opacity: 0;
       animation: fadeInImage 1s ease forwards;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: 1800px) {
+      padding: 0 0 100px 0;
+      justify-content: flex-end;
     }
   }
 }

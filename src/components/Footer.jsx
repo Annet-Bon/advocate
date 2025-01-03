@@ -88,7 +88,7 @@ const Footer = () => (
                     <FaViber />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="https://m.me/username"
                     target="_blank"
@@ -96,7 +96,7 @@ const Footer = () => (
                   >
                     <FaFacebookMessenger />
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://www.linkedin.com/in/myevtushenko/"

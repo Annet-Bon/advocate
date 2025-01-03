@@ -143,7 +143,7 @@ const Navigation = () => {
                     <FaViber />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="https://m.me/username"
                     target="_blank"
@@ -151,7 +151,7 @@ const Navigation = () => {
                   >
                     <FaFacebookMessenger />
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://www.linkedin.com/in/myevtushenko/"
