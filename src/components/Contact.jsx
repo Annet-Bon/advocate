@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
+import ReactGA from "react-ga4";
+
 import "../styles/Contact.scss";
 
 const Contact = () => {
@@ -9,32 +12,49 @@ const Contact = () => {
     message: "",
   });
   const [successMessage, setSuccessMessage] = useState("");
+  const [recaptchaToken, setRecaptchaToken] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaToken(value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Надсилаємо форму через EmailJS
+    if (!recaptchaToken) {
+      alert("Будь ласка, підтвердіть, що ви не робот!");
+      return;
+    }
+
+    const dataWithRecaptcha = { ...formData, recaptchaToken };
+
     emailjs
       .send(
-        "service_ioytucu", // ID вашого сервісу
-        "template_ide1lce", // ID вашого шаблону
-        formData,
-        "fvpv91400hQTXZC0j" // Ваш public key із EmailJS
+        "service_ioytucu", // ID сервісу
+        "template_ide1lce", // ID шаблону
+        dataWithRecaptcha,
+        "fvpv91400hQTXZC0j" // public key із EmailJS
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setSuccessMessage("Повідомлення успішно надіслано!");
 
-          // Очищуємо поля форми після успішного відправлення
           setFormData({
             name: "",
             phone: "",
             message: "",
+          });
+
+          // Відправка події в Google Analytics
+          ReactGA.event("submit_contact_form", {
+            category: "User",
+            action: "Submit Contact Form",
+            label: "Contact Form Submitted",
           });
         },
         (err) => {
@@ -77,6 +97,13 @@ const Contact = () => {
           onChange={handleChange}
           required
         ></textarea>
+
+        <ReCAPTCHA
+          sitekey="6LetebAqAAAAAK0QUN0voVJ78YhsNXp_93yTt7Zw" // ключ сайту
+          onChange={handleRecaptchaChange}
+          size="invisible" // невидимий режим
+        />
+
         <button type="submit" className="contact__button">
           Надіслати
         </button>

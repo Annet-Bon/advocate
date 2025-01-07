@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactGA from "@react-ga4";
 import "normalize.css";
 
 import "./styles/main.scss";
@@ -13,26 +14,17 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 // import AppLogo from "./components/AppLogo";
-import Preloader from "./components/Preloader";
+
+import Preview from "./images/preview.jpg";
 
 const App = () => {
-  // Стейт для контролю завантаження
-  const [isLoaded, setIsLoaded] = useState(false);
-
   useEffect(() => {
-    // Таймер для симуляції часу завантаження
-    const timer = setTimeout(() => {
-      setIsLoaded(true); // Коли прелоадер завершується, контент стає видимим
-    }, 0); // Встановлюємо затримку 4 секунди для завершення анімації прелоадера
-
-    // Очищаємо таймер, коли компонент буде демонтований
-    return () => clearTimeout(timer);
+    ReactGA.initialize("G-NS7FLV31D3"); // Tracking ID
+    ReactGA.send("pageview");
   }, []);
 
   return (
     <div className="app">
-      {!isLoaded && <Preloader />}
-      {/* Покажемо прелоадер, поки не завершилось завантаження */}
       <div className="page-container">
         <div className={`main-content ${isLoaded ? "visible" : ""}`}>
           <Navigation />

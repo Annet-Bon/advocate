@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Header.scss";
-// import Signature from "../images/signature.png";
+import Favicon from "../images/icons/favicon-16x16.png";
 import Portrait from "../images/portrait.webp";
 
 const Header = () => (
